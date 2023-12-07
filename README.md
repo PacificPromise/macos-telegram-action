@@ -12,6 +12,7 @@ Set environment variable in secrets of your repository as below:
 | Environment variable | Description | Example |
 |--------------------------|-----------------------------------------------------|-----------------------|
 | TELEGRAM_GROUP_ID | Id of your telegram group chat, you can find a way to get a group chat id [here](https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id) | -1001837632261 |
+| TELEGRAM_CHANNEL_ID | Id of your channel, you can find a way to get a group/channel chat id [here](https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id) | -1002016873625 |
 | TELEGRAM_TOPIC_ID | Id of your topic's group (if your group have topic) | 196 |
 | TELEGRAM_BOT_TOKEN | Token of your telegram bot, visit [here](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token) to know how to get telegram bot token | xxxxxxxxx |
 
