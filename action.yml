@@ -26,14 +26,13 @@ runs:
     #   run: |
     #     source ${{ github.action_path }}/index.sh
     #     send_telegram_group "${{ inputs.message }}"
-
     # - name: Send to topic
     #   if: ${{ inputs.type == 'topic' }}
     #   run: |
     #     source ${{ github.action_path }}/index.sh
     #     send_telegram_group_topic "${{ inputs.message }}"
-
     - name: Send to channel
+      shell: bash
       # if: ${{ inputs.type == 'channel' }}
       run: |
         echo hello world
