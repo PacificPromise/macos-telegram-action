@@ -37,5 +37,5 @@ runs:
       # if: ${{ inputs.type == 'channel' }}
       run: |
         echo hello world
-        source ${{ github.action_path }}/index.sh
-        send_telegram_channel "${{ inputs.message }}"
+      # source ${{ github.action_path }}/index.sh
+      # send_telegram_channel "${{ inputs.message }}"
