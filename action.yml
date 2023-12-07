@@ -21,20 +21,21 @@ runs:
         source ${{ github.action_path }}/index.sh
         health_check
 
-    - name: Send to group
-      if: ${{ inputs.type == 'group' }}
-      run: |
-        source ${{ github.action_path }}/index.sh
-        send_telegram_group "${{ inputs.message }}"
+    # - name: Send to group
+    #   if: ${{ inputs.type == 'group' }}
+    #   run: |
+    #     source ${{ github.action_path }}/index.sh
+    #     send_telegram_group "${{ inputs.message }}"
 
-    - name: Send to topic
-      if: ${{ inputs.type == 'topic' }}
-      run: |
-        source ${{ github.action_path }}/index.sh
-        send_telegram_group_topic "${{ inputs.message }}"
+    # - name: Send to topic
+    #   if: ${{ inputs.type == 'topic' }}
+    #   run: |
+    #     source ${{ github.action_path }}/index.sh
+    #     send_telegram_group_topic "${{ inputs.message }}"
 
     - name: Send to channel
-      if: ${{ inputs.type == 'channel' }}
+      # if: ${{ inputs.type == 'channel' }}
       run: |
+        echo hello world
         source ${{ github.action_path }}/index.sh
         send_telegram_channel "${{ inputs.message }}"
