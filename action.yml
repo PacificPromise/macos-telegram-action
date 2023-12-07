@@ -1,0 +1,24 @@
+name: "Macos Telegram Action"
+description: "Macos Telegram action"
+
+inputs:
+  script:
+    description: "Script to run"
+    required: true
+    default: "health_check"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Init Macos Telegram Action
+      shell: bash
+      run: |
+        source ${{ github.action_path }}/index.sh
+        health_check
+
+    - name: Run user script
+      shell: bash
+      run: |
+        source ${{ github.action_path }}/index.sh 
+        config_github_token 
+        ${{ inputs.script }}
