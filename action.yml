@@ -1,16 +1,13 @@
 name: "Macos Telegram Action"
 description: "Macos Telegram action"
-
+author: "GitHub"
 inputs:
-  script:
-    description: "Script to run"
-    inputs:
-      type:
-        description: "Your type: group, topic, channel"
-        required: true
-      message:
-        description: "Your message you want to send to telegram"
-        required: true
+  type:
+    description: "Your type: group, topic, channel"
+    required: true
+  message:
+    description: "Your message you want to send to telegram"
+    required: true
 
 runs:
   using: "composite"
