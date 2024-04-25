@@ -4,7 +4,8 @@ send_telegram_group_topic() {
     --data '{
       "chat_id": "'"$TELEGRAM_GROUP_ID"'",
       "reply_to_message_id": "'"$TELEGRAM_TOPIC_ID"'",
-      "text": "'"$1"'"
+      "text": "'"$1"'",
+      "link_preview_options": { "is_disabled": true }
   }'
 }
 
@@ -13,7 +14,8 @@ send_telegram_group() {
     --header 'Content-Type: application/json' \
     --data '{
       "chat_id": "'"$TELEGRAM_GROUP_ID"'",
-      "text": "'"$1"'"
+      "text": "'"$1"'",
+      "link_preview_options": { "is_disabled": true }
   }'
 }
 
@@ -22,7 +24,8 @@ send_telegram_channel() {
     --header 'Content-Type: application/json' \
     --data '{
       "chat_id": "'"$TELEGRAM_CHANNEL_ID"'",
-      "text": "'"$1"'"
+      "text": "'"$1"'",
+      "link_preview_options": { "is_disabled": true }
   }'
 }
 health_check() {
