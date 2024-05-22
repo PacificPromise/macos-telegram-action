@@ -1,6 +1,8 @@
 name: "Macos Telegram Action"
 description: "Macos Telegram action"
 author: "GitHub"
+icon: "activity"
+color: "green"
 inputs:
   type:
     description: "Your type: group, topic, channel"
